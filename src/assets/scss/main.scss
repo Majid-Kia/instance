@@ -1,0 +1,84 @@
+.v-main__wrap {
+  height: 100%;
+  min-height: 100vh;
+  margin-left: 220px;
+  background-color: #f1f9fe;
+  padding: 32px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #757575 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #757575;
+  border-radius: 6px;
+  border: 3px solid #ffffff;
+}
+
+.snackbar {
+  z-index: 1000;
+  position: fixed;
+  top: 12px;
+  &-warning {
+    .v-snack__content {
+      display: flex;
+      align-items: center;
+      background: #fffaed;
+      border: 1px solid #fac802;
+      border-radius: 4px;
+      span {
+        font-family: "Roboto", sans-serif;
+        margin-left: 18.5px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2f3857;
+      }
+    }
+  }
+  &-error {
+    .v-snack__content {
+      display: flex;
+      align-items: center;
+      background: #fcf2fa;
+      border: 1px solid #ff4465;
+      border-radius: 4px;
+      span {
+        font-family: "Roboto", sans-serif;
+        margin-left: 18.5px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2f3857;
+      }
+    }
+  }
+}
